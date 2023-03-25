@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 export default ({ title, children }) => {
   return (
@@ -12,11 +12,12 @@ export default ({ title, children }) => {
           position: "sticky",
           backgroundColor: "white",
           top: "0",
+          zIndex: 10,
         }}
       >
         {title}
       </Typography>
-      <Box>{children}</Box>
+      <Grid container>{children}</Grid>
     </Box>
   );
 };

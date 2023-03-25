@@ -1,5 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Section from "./Section";
+import Motivation from "./sections/Motivation";
+import Playlist from "./sections/Playlist";
 
 function Page() {
   return (
@@ -17,7 +19,8 @@ function Page() {
           ここにニュビタイトルがあるはずです。
         </Typography>
       </Grid>
-      <Section title={"Title"}></Section>
+      <Motivation />
+      <Playlist />
     </Container>
   );
 }
