@@ -17,7 +17,9 @@ export default ({ title, children }) => {
       >
         {title}
       </Typography>
-      <Grid container>{children}</Grid>
+      <Grid container spacing={4}>
+        {children}
+      </Grid>
     </Box>
   );
 };

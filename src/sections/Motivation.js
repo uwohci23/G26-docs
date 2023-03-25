@@ -1,47 +1,30 @@
 import Section from "../Section";
-import { Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import "./style.css";
+import Paragraph from "../components/Paragraph";
+import { APP_NAME } from "../Consts";
 
 export default () => {
   return (
     <div className={"motivation"}>
-      <Section title={"Motivations for Music App – 名字"}>
-        <ul>
-          <ol>
-            <Typography variant="h4">Passion</Typography>
-            <li>
-              <Typography variant="h5">
-                personalized music app Human-centered design: prioritize the
-                needs and capabilities of human users
-              </Typography>
-            </li>
-          </ol>
-          <ol>
-            <Typography variant="h4">Enhanced User Experience</Typography>
-            <li>
-              <Typography variant="h6">enjoyable, user-friendly</Typography>
-            </li>
-            <li>
-              <Typography variant="h6">
-                easy to use, learn, and understand. Improving usability leads to
-                more efficient, effective, and satisfying experiences for users.
-              </Typography>
-            </li>
-          </ol>
-          <ol>
-            <Typography variant="h4">Efficiency and Usability:</Typography>
-            <li>
-              <Typography variant="h6">
-                reducing the time and effort required to complete tasks
-              </Typography>
-            </li>
-            <li>
-              <Typography variant="h6">
-                optimizing the interaction between humans and the music app
-              </Typography>
-            </li>
-          </ol>
-        </ul>
+      <Section title={"Motivations for Music App – " + APP_NAME}>
+        <Grid item xs={8}>
+          <Paragraph>
+            At {APP_NAME}, our primary motivation is to create a personalized
+            music app that puts the user at the center of the experience. We
+            believe in human-centered design and we prioritize the needs and
+            capabilities of the users to ensure that our app can satisfy their
+            preferences and desires. To provide an enhanced user experience, EZ
+            Music focuses on usability, efficiency, and enjoyment. Also, we have
+            designed our app to be user-friendly, easy to learn, and
+            understandable, enabling users to quickly navigate and access their
+            favorite tunes. By reducing the time and effort required to complete
+            tasks and optimizing the interaction between humans and the app, we
+            aim to offer an efficient, enjoyable, and satisfying experience for
+            all users.
+          </Paragraph>
+        </Grid>
+        <Grid xs={8}></Grid>
       </Section>
     </div>
   );
