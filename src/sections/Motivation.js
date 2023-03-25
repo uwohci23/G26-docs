@@ -24,7 +24,7 @@ export default () => {
             all users.
           </Paragraph>
         </Grid>
-        <Grid xs={8}></Grid>
+        <Grid xs={4}></Grid>
       </Section>
     </div>
   );

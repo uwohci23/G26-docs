@@ -2,6 +2,7 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Section from "./Section";
 import Motivation from "./sections/Motivation";
 import Playlist from "./sections/Playlist";
+import Notification from "./sections/Notification";
 
 function Page() {
   return (
@@ -21,6 +22,7 @@ function Page() {
       </Grid>
       <Motivation />
       <Playlist />
+      <Notification />
     </Container>
   );
 }

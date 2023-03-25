@@ -115,7 +115,6 @@ export default () => {
               bottom: "0",
               backgroundColor: "white",
               border: "2px gray solid",
-              borderBottom: "0px gray solid",
               padding: "1rem",
               zIndex: 9,
             }}
