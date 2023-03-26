@@ -26,7 +26,7 @@ export default () => {
           </Paragraph>
         </Grid>
         <Grid xs={4}>
-          <img src={img} />
+          <img src={img} style={{ maxWidth: "100%" }} />
         </Grid>
       </Section>
     </div>
