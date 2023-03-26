@@ -23,7 +23,7 @@ import Magnify from "../components/Magnify";
 export default () => {
   const [magnifier, setMagnifier] = useState(false);
   const status = ["Playlist", "Move", "Delete Start", "Delete End"];
-  const [page, setPage] = useState(status[3]);
+  const [page, setPage] = useState(status[0]);
 
   const showInteractiveGroup = () => {
     switch (page) {
