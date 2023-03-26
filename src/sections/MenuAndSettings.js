@@ -48,8 +48,7 @@ export default () => {
             left="8%"
             top="38%"
             title="Progress bar"
-            content="Limit the user to set the cache/storage size from 0 to 8 GB.
-          "
+            content="Limit the user to set the cache/storage size from 0 to 8 GB."
           />
         </ImageInteractiveGroup>
       </Grid>

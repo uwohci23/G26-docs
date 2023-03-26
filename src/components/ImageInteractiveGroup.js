@@ -1,13 +1,13 @@
 import { Box } from "@mui/material";
 import { GlassMagnifier } from "react-image-magnifiers";
 
-export default ({ img, magnifier, children }) => {
+export default ({ img, magnifier, children, size = "60%" }) => {
   return (
     <Box style={{ maxWidth: "100%" }}>
       {magnifier ? (
         <GlassMagnifier
           imageSrc={img}
-          magnifierSize="60%"
+          magnifierSize={size}
           magnifierBackgroundColor="gray"
           overflow={true}
         />

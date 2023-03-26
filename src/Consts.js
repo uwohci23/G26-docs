@@ -1,1 +1,1 @@
-export const APP_NAME = "Acute";
+export const APP_NAME = "Simple Music Player";

@@ -8,6 +8,8 @@ export default ({ title, children }) => {
         style={{
           margin: "6rem 0",
           paddingLeft: "0.5rem",
+          paddingTop: "0.5rem",
+          paddingBottom: "0.5rem",
           borderLeft: "0.8rem black solid",
           position: "sticky",
           backgroundColor: "white",

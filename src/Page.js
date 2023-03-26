@@ -5,6 +5,10 @@ import Playlist from "./sections/Playlist";
 import Notification from "./sections/Notification";
 import LongPressMenu from "./sections/LongPressMenu";
 import MenuAndSettings from "./sections/MenuAndSettings";
+import Playing from "./sections/Playing";
+import PlayerController from "./sections/PlayerController";
+import Design from "./sections/Design";
+import { APP_NAME } from "./Consts";
 
 function Page() {
   return (
@@ -19,14 +23,20 @@ function Page() {
             borderLeft: "1rem black solid",
           }}
         >
-          ここにニュビタイトルがあるはずです。
+          Group 26 - {APP_NAME}
         </Typography>
       </Grid>
       <Motivation />
+      <Design />
       <Playlist />
       <Notification />
       <LongPressMenu />
       <MenuAndSettings />
+      <Playing />
+      <PlayerController />
+      <Box style={{ height: "300px", paddingTop: "120px" }}>
+        <Typography variant="h4">The End</Typography>
+      </Box>
     </Container>
   );
 }

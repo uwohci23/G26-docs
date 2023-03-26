@@ -3,11 +3,12 @@ import { Grid } from "@mui/material";
 import "./style.css";
 import Paragraph from "../components/Paragraph";
 import { APP_NAME } from "../Consts";
+import img from "../images/logo.png";
 
 export default () => {
   return (
     <div className={"motivation"}>
-      <Section title={"Motivations for Music App – " + APP_NAME}>
+      <Section title={"Motivations"}>
         <Grid item xs={8}>
           <Paragraph>
             At {APP_NAME}, our primary motivation is to create a personalized
@@ -24,7 +25,9 @@ export default () => {
             all users.
           </Paragraph>
         </Grid>
-        <Grid xs={4}></Grid>
+        <Grid xs={4}>
+          <img src={img} />
+        </Grid>
       </Section>
     </div>
   );
