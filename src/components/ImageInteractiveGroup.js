@@ -7,7 +7,7 @@ export default ({ img, magnifier, children }) => {
       {magnifier ? (
         <GlassMagnifier
           imageSrc={img}
-          magnifierSize="40%"
+          magnifierSize="60%"
           magnifierBackgroundColor="gray"
           overflow={true}
         />

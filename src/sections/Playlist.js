@@ -17,6 +17,8 @@ import Hover from "../components/Hover";
 import ImageInteractiveGroup from "../components/ImageInteractiveGroup";
 import SearchIcon from "@mui/icons-material/Search";
 import Paragraph from "../components/Paragraph";
+import InteractiveBox from "../components/InteractiveBox";
+import Magnify from "../components/Magnify";
 
 export default () => {
   const [magnifier, setMagnifier] = useState(false);
@@ -106,28 +108,13 @@ export default () => {
 
   return (
     <Section title="Playlist">
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <Box style={{ position: "relative" }}>
           {showInteractiveGroup()}
-          <Box
-            style={{
-              position: "sticky",
-              bottom: "0",
-              backgroundColor: "white",
-              border: "2px gray solid",
-              padding: "1rem",
-              zIndex: 9,
-            }}
-          >
-            <FormControlLabel
-              control={
-                <Switch onChange={(e) => setMagnifier(e.target.checked)} />
-              }
-              label={
-                <>
-                  <SearchIcon style={{ verticalAlign: "middle" }} /> Magnifier
-                </>
-              }
+          <InteractiveBox>
+            <Magnify
+              value={magnifier}
+              onChange={(e) => setMagnifier(e.target.checked)}
             />
             <br />
             {status.map((s) => (
@@ -137,16 +124,16 @@ export default () => {
                   <input
                     type={"radio"}
                     checked={page === s}
-                    onChange={(e) => setPage(s)}
+                    onChange={() => setPage(s)}
                   />
                 }
                 label={s}
               />
             ))}
-          </Box>
+          </InteractiveBox>
         </Box>
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={12} md={8}>
         <Paragraph>
           In the original project, the playlist exists but is not visible or
           editable. This left the user to wait for a song to finish playing

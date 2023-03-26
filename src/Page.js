@@ -3,6 +3,8 @@ import Section from "./Section";
 import Motivation from "./sections/Motivation";
 import Playlist from "./sections/Playlist";
 import Notification from "./sections/Notification";
+import LongPressMenu from "./sections/LongPressMenu";
+import MenuAndSettings from "./sections/MenuAndSettings";
 
 function Page() {
   return (
@@ -23,6 +25,8 @@ function Page() {
       <Motivation />
       <Playlist />
       <Notification />
+      <LongPressMenu />
+      <MenuAndSettings />
     </Container>
   );
 }

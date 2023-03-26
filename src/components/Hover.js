@@ -1,7 +1,15 @@
 import { Tooltip, Typography } from "@mui/material";
 import { useState } from "react";
 
-export default ({ height, width, top, left, title, content }) => {
+export default ({
+  height,
+  width,
+  top,
+  left,
+  title,
+  content,
+  boxColor = "darkgray",
+}) => {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -23,7 +31,7 @@ export default ({ height, width, top, left, title, content }) => {
           left,
           height,
           width,
-          border: `${hovered ? "orange" : "gray"} 4px dashed`,
+          border: `${hovered ? "orange" : boxColor} 4px dashed`,
           zIndex: 2,
           cursor: "pointer",
         }}
