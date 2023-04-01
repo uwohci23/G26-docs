@@ -1,4 +1,4 @@
-import { Tooltip, Typography } from "@mui/material";
+import { Box, Tooltip, Typography } from "@mui/material";
 import { useState } from "react";
 
 export default ({
@@ -15,12 +15,12 @@ export default ({
   return (
     <Tooltip
       title={
-        <>
+        <Box style={{ padding: "1rem" }}>
           <Typography variant="h6" style={{ textAlign: "center" }}>
             {title}
           </Typography>
           <Typography>{content}</Typography>
-        </>
+        </Box>
       }
       placement="top"
     >
