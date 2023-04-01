@@ -1,12 +1,12 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Section from "./Section";
 import Motivation from "./sections/presentation/Motivation";
-import Playlist from "./sections/presentation/Playlist";
+import Playlist from "./sections/report/Playlist";
 import Notification from "./sections/presentation/Notification";
 import LongPressMenu from "./sections/presentation/LongPressMenu";
 import MenuAndSettings from "./sections/presentation/MenuAndSettings";
 import Playing from "./sections/presentation/Playing";
-import PlayerController from "./sections/presentation/PlayerController";
+import PlayerController from "./sections/report/PlayerController";
 import Design from "./sections/presentation/Design";
 import { APP_NAME } from "./Consts";
 import Introduction from "./sections/Introduction";

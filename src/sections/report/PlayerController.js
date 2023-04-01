@@ -4,10 +4,11 @@ import img from "../../images/play_control.png";
 import ImageInteractiveGroup from "../../components/ImageInteractiveGroup";
 import Paragraph from "../../components/Paragraph";
 import Hover from "../../components/Hover";
+import TextContent from "../../components/TextContent";
 
 export default () => {
   return (
-    <Section title="Player Controller">
+    <>
       <Grid item xs={12}>
         <ImageInteractiveGroup img={img}>
           <Hover
@@ -29,19 +30,21 @@ export default () => {
         </ImageInteractiveGroup>
       </Grid>
       <Grid item xs={12}>
-        <Paragraph title="Visibility">
-          The control bar is located at the bottom of the screen, making it
-          easily accessible and noticeable to users. All essential controls,
-          includes play and pause, are clearly visible, ensuring users can
-          effortlessly identify and interact with them.
-        </Paragraph>
-        <Paragraph title="Feedback">
-          The control bar provides immediate feedback, allowing users to
-          understand the impact of their actions. For example, when the play
-          button is tapped, it changes to a pause button, indicating that the
-          music is now playing.
+        <Paragraph title="Player Controller">
+          <TextContent>
+            <b>Visibility</b>: The control bar is located at the bottom of the
+            screen, making it easily accessible and noticeable to users. All
+            essential controls, includes play and pause, are clearly visible,
+            ensuring users can effortlessly identify and interact with them.
+          </TextContent>
+          <TextContent>
+            <b>Feedback</b>: The control bar provides immediate feedback,
+            allowing users to understand the impact of their actions. For
+            example, when the play button is tapped, it changes to a pause
+            button, indicating that the music is now playing.
+          </TextContent>
         </Paragraph>
       </Grid>
-    </Section>
+    </>
   );
 };

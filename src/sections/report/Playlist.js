@@ -19,6 +19,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import Paragraph from "../../components/Paragraph";
 import InteractiveBox from "../../components/InteractiveBox";
 import Magnify from "../../components/Magnify";
+import RadioGroup from "../../components/RadioGroup";
 
 export default () => {
   const [magnifier, setMagnifier] = useState(false);
@@ -107,63 +108,46 @@ export default () => {
   };
 
   return (
-    <Section title="Playlist">
+    <>
       <Grid item xs={12} md={4}>
         <Box style={{ position: "relative" }}>
           {showInteractiveGroup()}
           <InteractiveBox>
-            <Magnify
-              value={magnifier}
-              onChange={(e) => setMagnifier(e.target.checked)}
-            />
+            <Magnify value={magnifier} onChange={setMagnifier} />
             <br />
-            {status.map((s) => (
-              <FormControlLabel
-                key={s}
-                control={
-                  <input
-                    type={"radio"}
-                    checked={page === s}
-                    onChange={() => setPage(s)}
-                  />
-                }
-                label={s}
-              />
-            ))}
+            <RadioGroup status={status} page={page} onChange={setPage} />
           </InteractiveBox>
         </Box>
       </Grid>
       <Grid item xs={12} md={8}>
-        <Paragraph>
-          In the original project, the playlist exists but is not visible or
-          editable. This left the user to wait for a song to finish playing
-          before automatically switching to the next song. In the new design we
-          have added actionable playlists that allow users to not only add
-          songs, but also delete and move them.
-        </Paragraph>
-        <Paragraph title={"Delete"}>
-          The delete function will be triggered when the user swipes the song to
-          the left. It will first reveal a gray background with a trash can
-          icon, prompting the user that this feature is Delete. If the user lets
-          go at this point, the delete operation will be cancelled. This design
-          is to prevent accidental touch. Swipe more to the left and the
-          background will turn red, warning the user that the delete action will
-          be triggered. At this point, the delete operation can be offset by
-          swiping to the right to return to the gray state. If the user directly
-          releases his hand, the song will automatically continue to move to the
-          left, prompting the user that the deletion is complete.
-        </Paragraph>
-        <Paragraph title={"Move"}>
-          The song list movement function is achieved by long pressing the
-          button on the left side. The handle icon on the left side indicates to
-          the user that this is an option that can be manipulated. By long
-          pressing it will go to the next state. In the move state, the option
-          being moved will appear to have a boost effect, i.e. a shadow will
-          appear around it. The target will be empty in the list as soon as it
-          is moved to the specified position, prompting the user that the target
-          will be inserted here.
+        <Paragraph title="Playlist">
+          <TextContent>
+            <b>Consistency</b>: the design of the playlist is similar to an
+            album list. Users should easily understand the features of a
+            playlist that is close to the album list without telling.
+          </TextContent>
+          <TextContent>
+            <b>Chunking</b>: the song cover, song name, artist name and commands
+            are collected into an horizontal area, distinguishing other songs
+            with white space. Users can easily tell which information is related
+            together.
+          </TextContent>{" "}
+          <TextContent>
+            <b>Visibility</b>: when users keep pressing the songs in the
+            playlist, there is a floating shadow generated under the selected
+            song; if users drag the selected song to the position of other
+            songs, the selected song will be repositioned with animation. It
+            tells users the song status has been changed by adding these
+            elements.
+          </TextContent>{" "}
+          <TextContent>
+            <b>Fitts’ Law</b>: The control panel with playing command icons are
+            listed at the bottom of the device. This design reduces the distance
+            from the user's thumb to the screen so the user needs less time to
+            interact with the UI.
+          </TextContent>
         </Paragraph>
       </Grid>
-    </Section>
+    </>
   );
 };
