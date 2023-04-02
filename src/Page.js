@@ -13,6 +13,8 @@ import Introduction from "./sections/Introduction";
 import Objective from "./sections/Objective";
 import KeyFeatures from "./sections/KeyFeatures";
 import DesignPrinciples from "./sections/DesignPrinciples";
+import Evaluation from "./sections/Evaluation";
+import Recommendations from "./sections/Recommendations";
 
 function Page() {
   return (
@@ -41,6 +43,8 @@ function Page() {
       {/*<PlayerController />*/}
       <Introduction />
       <DesignPrinciples />
+      <Evaluation />
+      <Recommendations />
       <Box style={{ height: "300px", paddingTop: "120px" }}>
         <Typography variant="h4">The End</Typography>
       </Box>
