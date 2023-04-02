@@ -18,7 +18,7 @@ import PlayerController from "./report/PlayerController";
 
 export default () => {
   return (
-    <Section title={"Design Principles Analysis"}>
+    <Section title={"Design Principles"}>
       <LoginPage />
       <Library />
       <Menu />

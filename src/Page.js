@@ -40,8 +40,6 @@ function Page() {
       {/*<Playing />*/}
       {/*<PlayerController />*/}
       <Introduction />
-      <Objective />
-      <KeyFeatures />
       <DesignPrinciples />
       <Box style={{ height: "300px", paddingTop: "120px" }}>
         <Typography variant="h4">The End</Typography>
