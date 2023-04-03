@@ -3,6 +3,8 @@ import { Grid } from "@mui/material";
 import img_1 from "../../images/n1.png";
 import img_2 from "../../images/n2.png";
 import ImageInteractiveGroup from "../../components/ImageInteractiveGroup";
+import Paragraph from "../../components/Paragraph";
+import TextContent from "../../components/TextContent";
 
 export default () => {
   return (

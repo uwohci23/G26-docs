@@ -15,6 +15,7 @@ import KeyFeatures from "./sections/KeyFeatures";
 import DesignPrinciples from "./sections/DesignPrinciples";
 import Evaluation from "./sections/Evaluation";
 import Recommendations from "./sections/Recommendations";
+import Script from "./sections/Script";
 
 function Page() {
   return (
@@ -33,16 +34,10 @@ function Page() {
           <Typography variant="h2">Final Report</Typography>
         </Typography>
       </Grid>
-      {/*<Motivation />*/}
-      {/*<Design />*/}
-      {/*<Playlist />*/}
-      {/*<Notification />*/}
-      {/*<LongPressMenu />*/}
-      {/*<MenuAndSettings />*/}
-      {/*<Playing />*/}
-      {/*<PlayerController />*/}
+
       <Introduction />
       <Design />
+      <Script />
       <DesignPrinciples />
       <Evaluation />
       <Recommendations />
