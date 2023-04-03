@@ -16,10 +16,23 @@ import DesignPrinciples from "./sections/DesignPrinciples";
 import Evaluation from "./sections/Evaluation";
 import Recommendations from "./sections/Recommendations";
 import Script from "./sections/Script";
+import Category from "./components/Category";
+import React from "react";
 
 function Page() {
   return (
     <Container fixed maxWidth="lg">
+      <Category
+        links={[
+          "Summary",
+          "Design",
+          "Script",
+          "Design Principles",
+          "Evaluation",
+          "Recommendations",
+        ]}
+      />
+
       <Grid container xs={12}>
         <Typography
           variant="h1"
@@ -34,7 +47,6 @@ function Page() {
           <Typography variant="h2">Final Report</Typography>
         </Typography>
       </Grid>
-
       <Introduction />
       <Design />
       <Script />

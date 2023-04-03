@@ -1,8 +1,10 @@
 import { Box, Grid, Typography } from "@mui/material";
+import React from "react";
 
 export default ({ title, children }) => {
   return (
     <Box>
+      <a id={title} />
       <Typography
         variant="h2"
         style={{
