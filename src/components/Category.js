@@ -17,6 +17,7 @@ export default ({ links }) => {
         position: "fixed",
         left: "1rem",
         top: "1rem",
+        zIndex: 100,
         backgroundColor: "white",
       }}
     >
