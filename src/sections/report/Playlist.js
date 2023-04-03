@@ -131,7 +131,7 @@ export default () => {
             are collected into an horizontal area, distinguishing other songs
             with white space. Users can easily tell which information is related
             together.
-          </TextContent>{" "}
+          </TextContent>
           <TextContent>
             <b>Visibility</b>: when users keep pressing the songs in the
             playlist, there is a floating shadow generated under the selected
@@ -139,7 +139,7 @@ export default () => {
             songs, the selected song will be repositioned with animation. It
             tells users the song status has been changed by adding these
             elements.
-          </TextContent>{" "}
+          </TextContent>
           <TextContent>
             <b>Fitts’ Law</b>: The control panel with playing command icons are
             listed at the bottom of the device. This design reduces the distance

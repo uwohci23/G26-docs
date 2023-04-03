@@ -118,6 +118,12 @@ export default () => {
       <Grid item xs={12} md={8}>
         <Paragraph title="Menu & Settings">
           <TextContent>
+            <b>Hick's Law</b>: Hick's Law says that user selection time is
+            proportional to the number of options. We use a hierarchically
+            expanded menu to reduce the number of options the user can see at
+            once, to improve the user's judgment and reduce judgment time.
+          </TextContent>
+          <TextContent>
             <b>Semiotic</b>: These two icons represent playlist and settings.
             Users are able to understand what the options under the menu are
             since they are told what the icons represent from their environment
@@ -131,13 +137,13 @@ export default () => {
           <TextContent>
             <b>Visibility</b>: Users are able to see the status of each option
             in settings by their colors. Black is functioning, red is dangerous.
-          </TextContent>{" "}
+          </TextContent>
           <TextContent>
             <b>Constraints</b>: Limit the user to set the cache/storage size
             from 0 to 8 GB. Since the size of the cache and storage is limited
             in device, setting the maximum volume could prevent users from
             making errors caused by memory overflow.
-          </TextContent>{" "}
+          </TextContent>
           <TextContent>
             <b>Confirmation</b>: a window pops up when users click on Logout in
             the settings page. This will prevent users from making irrevocable

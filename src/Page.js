@@ -7,7 +7,7 @@ import LongPressMenu from "./sections/presentation/LongPressMenu";
 import MenuAndSettings from "./sections/presentation/MenuAndSettings";
 import Playing from "./sections/presentation/Playing";
 import PlayerController from "./sections/report/PlayerController";
-import Design from "./sections/presentation/Design";
+import Design from "./sections/report/Design";
 import { APP_NAME } from "./Consts";
 import Introduction from "./sections/Introduction";
 import Objective from "./sections/Objective";
@@ -42,6 +42,7 @@ function Page() {
       {/*<Playing />*/}
       {/*<PlayerController />*/}
       <Introduction />
+      <Design />
       <DesignPrinciples />
       <Evaluation />
       <Recommendations />

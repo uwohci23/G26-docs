@@ -129,7 +129,7 @@ export default () => {
             different users’ needs. View mode album list is album title focused,
             and view album grid mode is album cover focused. Users are able to
             select different modes by their preference.
-          </TextContent>{" "}
+          </TextContent>
           <TextContent>
             <b>Chunking</b>: Album cover, album title and album artist is
             collected into a grid. This keeps the related things close together

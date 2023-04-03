@@ -56,7 +56,7 @@ export default () => {
             in the input bar, a window pops up and zooms in the location the
             user finger is pressing to help the user locate the character. This
             design reduces the gulf of execution.
-          </TextContent>{" "}
+          </TextContent>
           <TextContent>
             <b>Feedback</b>: When users put their information incorrectly, an
             error message with highlighted color pops up under the incorrect

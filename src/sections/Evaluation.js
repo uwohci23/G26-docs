@@ -7,112 +7,120 @@ export default () => {
   return (
     <Section title={"Evaluation"}>
       <Grid item xs={12}>
+        <TextContent>
+          The project as a whole follows the design principles learned in the
+          course and achieves a high design standard. Nevertheless, there are
+          still areas for improvement in the project. We will analyze this topic
+          below.
+        </TextContent>
         <Paragraph title="Visibility of System Status">
           <TextContent>
-            The app provides real-time feedback on the playing status,
-            connection status, and errors. The playing status bar and
-            notifications ensure that users are always aware of the app's
-            current state. The app only sometimes provides clear and timely
-            feedback about the status of ongoing processes. For example, whether
-            the app attempts to connect to the server during the login process
-            needs to be clarified. A visual indicator like a spinning wheel or
-            progress bar would improve the user experience.
+            The application as a whole provides enough feedback to let the user
+            know whether the operation has taken effect, for example, to see the
+            change in the interface when switching between interfaces. If the
+            interaction does not allow the user to see enough changes, we add a
+            Toast to let the user know that the action has taken effect,
+            reducing confusion. However there are some places where visibility
+            can be improved. For example, in the playlist, we did not prompt the
+            user by default that swiping to the left was a delete function. This
+            may cause some confusion to new users. Play time is not shown in the
+            player interface by default, because it is thought that users do not
+            have a high demand for knowing the play time at all times. This
+            needs further user research and evaluation.
           </TextContent>
         </Paragraph>
         <Paragraph title="Match Between the System and the Real World">
           <TextContent>
-            The app uses familiar controls, icons, and terminology that users
-            would expect in a music app. The design and functionality are
-            consistent with other music apps, making it easy for users to
-            understand and navigate the interface.
+            The application as a whole is relatively intuitive and easy to
+            understand. For example, we used Library as the name of the album
+            list, which is reminiscent of a real library with a large collection
+            of books, similar to an album cabinet. Other names such as Playlist
+            are very straightforward. Other icons have little ambiguity
           </TextContent>
         </Paragraph>
         <Paragraph title="User Control & Freedom">
           <TextContent>
-            The app offers multiple ways to navigate and control music playback,
-            including touch gestures, buttons, and menus. Users can customize
-            settings like themes and cache management to personalize their
-            experience.
+            Our application supports a return on page. This back feature allows
+            the user to cancel and return to the previous page if they go to the
+            wrong page. However, the application lacks more granular controls.
+            For dangerous operations, such as deleting music from a playlist,
+            the app does not provide undo and redo functions. Adding such
+            features could greatly improve the user experience. The download and
+            add to playlist functions also do not provide a cancel function.
+            These are all areas that could be improved.
           </TextContent>
         </Paragraph>
         <Paragraph title="Consistency & Standards">
           <TextContent>
-            The app maintains consistency in design elements, icons, and
-            terminology across different pages and functions. This consistency
-            helps users learn the system more quickly and reduces the likelihood
-            of errors.
+            The application uses the same UI design with no distinctive
+            interactions, so there is a high degree of consistency. There is a
+            clear distinction in appearance between content that can be
+            interacted with and content that cannot be interacted with, so that
+            users can clearly distinguish between them.
           </TextContent>
         </Paragraph>
         <Paragraph title="Error Prevention">
           <TextContent>
-            The app uses constraints, confirmation dialogs, and clear error
-            messages to prevent user errors. For example, users must confirm
-            before logging out or deleting songs, and error messages clearly
-            explain any issues. While the app attempts to minimize user errors,
-            there are still areas where improvements can be made. For instance,
-            the app should validate user input for server IP, username, and
-            password fields during the login process to ensure the entered data
-            is correct before submitting the login request.
+            The application prevents users from making mistakes in many ways.
+            For example, in a playlist, the user needs to swipe the music to the
+            left more than 50% of the way through before the deletion will take
+            place. And before the hand leaves, the user can undo it by reversing
+            the operation. When setting the cache size, the size provided starts
+            from 0 to a sufficiently large number. This operation, which is not
+            entered by the user himself, reduces the number of input errors.
+            Where the application does not do enough is in the login section,
+            where the password does not provide a visible option. This option
+            would help the user to see the password they have entered and reduce
+            errors.
           </TextContent>
         </Paragraph>
         <Paragraph title="Recognition vs. Recall in User Interfaces">
           <TextContent>
-            The app uses icons, labels, and tooltips to help users recognize
-            functions and controls. Familiar icons and design elements allow
-            users to transfer knowledge from other music apps, reducing the need
-            for recall. The app's navigation and menu system could be improved
-            by making it more intuitive and discoverable. Users may need to
-            recognize that they can swipe right to access the menu from the
-            Library page. A more visible and consistent menu icon throughout the
-            app would help users easily identify and navigate to the desired
-            section.
+            We strictly limited the length of prompts in the design of the
+            application. All prompts, including error messages, are clear and
+            concise in telling the user what is wrong, and use red to indicate
+            the part of the application that is wrong. The downside is that the
+            errors are not broken down enough. If the errors were broken down,
+            the user could know more specifically what the problem is and get a
+            direct solution.
           </TextContent>
         </Paragraph>
         <Paragraph title="Flexibility and Efficiency of Use">
           <TextContent>
-            The app offers multiple views and ways to interact with content,
-            allowing users to choose the best method. Features like playlists,
-            searches, and settings cater to user needs and enable efficient app
-            use.
+            We are clearly lacking in this area. For example, in the case of
+            deletion, even though the operation is very simple, the user still
+            has to do it for each piece of music in order to delete many. Also,
+            if the user wants to add a lot of music to the playlist, they need
+            to repeat the operation several times. The user needs to click once
+            on each item to add them all. This violates the principles of
+            Flexibility and Efficiency of Use.
           </TextContent>
-        </Paragraph>{" "}
+        </Paragraph>
         <Paragraph title="Aesthetic and Minimalist Design">
           <TextContent>
-            The app's design is clean and minimalist, focusing on essential
-            elements and removing unnecessary distractions. This design approach
-            improves usability and enhances user satisfaction. While the app has
-            attempted to maintain a minimalist design, there are instances where
-            the design could be further refined. For example, the Playing Status
-            bar at the bottom of the screen could be more visually appealing and
-            better integrated with the overall app design. Additionally, the
-            Album Detail page can be improved by providing a more consistent
-            layout for song lists in the grid and list views.
+            We put a lot of effort into this. For example, the delete action in
+            the playlist is hidden most of the time, because it is not a common
+            feature. Similarly, in the album details, add to playlist location
+            and download are also uncommon functions, so they appear only when
+            long pressed. The menu is just an icon when it is not open, when it
+            is open it will have detailed content and options.
           </TextContent>
-        </Paragraph>{" "}
+        </Paragraph>
         <Paragraph title="Help Users Recognize, Diagnose, and Recover from Errors">
           <TextContent>
-            The app provides clear error messages and guidance on resolving
-            issues. This helps users understand what went wrong and how to fix
-            it, reducing frustration and promoting a positive user experience.
-            The app does not consistently provide clear error messages to help
-            users understand and resolve issues. In cases where login
-            credentials are incorrect, the app should give specific information
-            about which field is wrong (e.g., incorrect password) rather than a
-            generic error message.
+            At this point we use specific errors to let users know how they
+            should improve their input. For example, we tell users to check the
+            format of a link when we find an illegitimate link, and ask them to
+            check their password when it is incorrect.
           </TextContent>
-        </Paragraph>{" "}
+        </Paragraph>
         <Paragraph title="Help & Documentation">
           <TextContent>
-            While this document does not detail the help and documentation
-            features of the app, it is essential to provide clear and concise
-            service resources for users. These resources should be easily
-            accessible within the app and offer guidance on using the app's
-            features, troubleshooting common issues, and understanding any error
-            messages that may occur. The app needs a comprehensive help section
-            or documentation to assist users in troubleshooting issues or
-            learning how to use the app's features. A built-in help section with
-            searchable FAQs, tips, and tutorials can improve user experience and
-            reduce frustration.
+            This is another area where we did not do enough. We did not teach
+            users enough. Therefore, the hidden features, such as the long press
+            menu and the delete and move functions of the playlist, need to be
+            properly taught to the users in order for them to better grasp the
+            features.
           </TextContent>
         </Paragraph>
       </Grid>

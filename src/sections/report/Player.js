@@ -55,6 +55,24 @@ export default () => {
             play/pause, next song, loop separately. Users can easily tell the
             use of buttons by looking at the icons.
           </TextContent>
+          <TextContent>
+            <b>Affordance</b>: Affordance is what lets the user know what to do
+            with it the moment they see it. We use a progress bar here because a
+            progress bar appears to the user as an element that can be
+            manipulated. We use the progress bar to inform the user that the
+            element can be manipulated by dragging it.
+          </TextContent>
+          <TextContent>
+            <b>Mapping</b>: In the player screen, the previous song is on the
+            left and the next song is on the right. The progress bar is before
+            the current time on the left and after on the right. The principle
+            of Mapping is used
+          </TextContent>
+          <TextContent>
+            <b>Metaphor</b>: The whole interface is designed to mimic the
+            traditional player, allowing users to transfer their previous
+            experience and quickly understand how to use it.
+          </TextContent>
         </Paragraph>
       </Grid>
     </>
