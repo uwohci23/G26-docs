@@ -13,11 +13,26 @@ export default () => {
       <Grid item xs={12}>
         <Paragraph title="Introduction">
           <TextContent>
-            Simple Music is a groundbreaking music application designed with a
+            Simple Music is an Android music application. This application is a
+            subsonic music server client. This music application designed with a
             strong focus on human-computer interaction principles to provide an
             intuitive, user-centric experience for the people who love music.
             Our motivation is to create a personalized music app that puts the
             user at the center of the experience and satisfy what they need.
+          </TextContent>{" "}
+          <TextContent>
+            The original app only provided basic music playback and album
+            browsing. Users could not switch the playback order or adjust the
+            settings. In the new app, we have added a player interface. In the
+            player interface users can switch the playback mode, switch to the
+            previous and next song, and adjust the playback time. We have also
+            added a playlist function. Users can adjust the order of playing or
+            delete the music in the playlist. Also, we added settings so that
+            users can adjust some settings and save them. They can also log in
+            or log out in order to switch accounts. Finally, we added a lock
+            screen and notification toggle feature. This feature allows users to
+            go to the app at any time or switch the song that is playing in
+            either app.
           </TextContent>
         </Paragraph>
         <Paragraph title="Objective">
