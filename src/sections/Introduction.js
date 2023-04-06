@@ -64,6 +64,34 @@ export default () => {
             </ol>
           </TextContent>
         </Paragraph>
+        <Paragraph title="Repo Links and Infomation">
+          <TextContent>
+            <div>
+              Code:
+              <a
+                style={{ marginLeft: "1rem" }}
+                href="https://github.com/uwohci23/G26-code"
+              >
+                https://github.com/uwohci23/G26-code
+              </a>
+            </div>
+            <div>
+              Application:
+              <a
+                style={{ marginLeft: "1rem" }}
+                href="https://github.com/uwohci23/G26-code/releases/download/apk/app-debug.apk"
+              >
+                https://github.com/uwohci23/G26-code/releases/download/apk/app-debug.apk
+              </a>
+            </div>
+            <div>
+              Test Account:{" "}
+              <span style={{ marginLeft: "1rem" }}>
+                Private. Please see submission info on OWL
+              </span>
+            </div>
+          </TextContent>
+        </Paragraph>
       </Grid>
     </Section>
   );

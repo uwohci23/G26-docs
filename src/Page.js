@@ -1,39 +1,29 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import Section from "./Section";
-import Motivation from "./sections/presentation/Motivation";
-import Playlist from "./sections/report/Playlist";
-import Notification from "./sections/presentation/Notification";
-import LongPressMenu from "./sections/presentation/LongPressMenu";
-import MenuAndSettings from "./sections/presentation/MenuAndSettings";
-import Playing from "./sections/presentation/Playing";
-import PlayerController from "./sections/report/PlayerController";
-import Design from "./sections/report/Design";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { APP_NAME } from "./Consts";
 import Introduction from "./sections/Introduction";
-import Objective from "./sections/Objective";
-import KeyFeatures from "./sections/KeyFeatures";
 import DesignPrinciples from "./sections/DesignPrinciples";
 import Evaluation from "./sections/Evaluation";
 import Recommendations from "./sections/Recommendations";
-import Script from "./sections/Script";
 import Category from "./components/Category";
 import React from "react";
+import NavMap from "./sections/report/NavMap";
+import ScriptNav from "./sections/ScriptNav";
 
 function Page() {
   return (
     <Container fixed maxWidth="lg">
-      <Category
-        links={[
-          "Summary",
-          "Design",
-          "Script",
-          "Design Principles",
-          "Evaluation",
-          "Recommendations",
-        ]}
-      />
-
       <Grid container xs={12}>
+        <Category
+          links={[
+            "Summary",
+            "Design",
+            "Script",
+            "Navigational Map",
+            "Design Principles",
+            "Evaluation",
+            "Recommendations",
+          ]}
+        />
         <Typography
           variant="h1"
           style={{
@@ -48,8 +38,9 @@ function Page() {
         </Typography>
       </Grid>
       <Introduction />
-      <Design />
-      <Script />
+      {/*<Design />*/}
+      <NavMap />
+      <ScriptNav />
       <DesignPrinciples />
       <Evaluation />
       <Recommendations />

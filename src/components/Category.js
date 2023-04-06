@@ -1,4 +1,5 @@
 import {
+  Button,
   IconButton,
   List,
   ListItem,
@@ -21,15 +22,20 @@ export default ({ links }) => {
         backgroundColor: "white",
       }}
     >
-      <IconButton size="large" onClick={() => setOpen((open) => !open)}>
-        <ListIcon /> <Typography>Content</Typography>
-      </IconButton>
+      <Button
+        variant="outlined"
+        size="large"
+        onClick={() => setOpen((open) => !open)}
+      >
+        <ListIcon />
+      </Button>
       <List hidden={open}>
         {links?.map((link) => (
           <ListItem key={link} disablePadding>
             <ListItemButton
               onClick={() => {
                 window.location.hash = link;
+                setOpen((open) => !open);
               }}
             >
               <ListItemText primary={link} />
